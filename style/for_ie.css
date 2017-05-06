@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/*reset*/
+body,div,ul,dl,dt,p,h1,h2,h3,dl,dd,input{
+	padding: 0;margin: 0; font-family: Verdana, "Microsoft Yahei", courier;
+	font-size: 10px;
+}
+li{list-style: none;}
+a{text-decoration:none; color: #000;}
+a img{
+	border: none;
+}
+
+/*end reset*/
+
+
+/*layout*/
+
+#header,#container,#footer{
+	width: 999px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	zoom:1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#header{
+	position: relative;
+}
+
+
+#header h1{
+	/*width: 380px;*/
+	width: 194px;
+	margin: 0 auto;
+}
+#header .msg, #header .shopping-nav{
+	margin-top: 20px;
+}
+
+#header .shopping-nav a:hover{
+	color: #660000;
+	text-decoration: underline;
+}
+
+#header .banner{
+	position: relative;
+	margin-bottom: 34px;
+	height: 382px;
+	/*height: 361px;*/
+}
+#header .banner .post{
+	background-color: transparent;
+}
+
+#header .main-nav{
+	margin-top: 32px;
+	height: 34px;
+	border:solid #a5a5a5;
+	border-width: 1px 0;
+}
+#main .content{
+	margin-top: 30px;
+}
+#main .content .section1{
+	float: left;
+}
+#main .content .section2{
+	float: right;
+}
+
+#main .content section{
+	width: 480px;
+	height: 447px;
+}
+#main .content section li{
+	float: left;
+	display: inline;
+	margin: 0 3px 5px 0;	
+}
+/*.com{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}*/
+
+#main .content .layer1{
+	margin-bottom: 68px;
+}
+
+#main .content section .no-margin-right{
+	margin-right: 0;
+}
+
+#footer ul{
+	float: left;
+}
+
+/*public*/
+
+.content .cabinet{
+	background: url(../images/for_ie/closing_bg.png) 0 0 no-repeat;
+}
+
+
+/*detail*/
+
+#header h1{
+	/*padding:40px 0;*/
+	/*margin: 40px 0;*/
+	margin-top: 40px;
+	height: 33px;
+	/*text-align: center;*/
+	text-indent: -1000px;
+	background: url(../images/for_ie/logo.gif) 0 0 no-repeat;
+/*	font: 46px snell Roundhand;
+	color: #2C2C2B;*/
+}
+
+#header .msg{
+	font-weight: bold;
+	font-size: 10px;
+	color: #F84C08;
+}
+
+#header .shopping-nav a{
+	font-weight: bold;
+	color: #656464;
+}
+#header .shopping-nav li{
+	margin-bottom: 12px;
+}
+
+#header .main-nav li{
+	float: left; 
+	display: inline;
+	padding: 11px 0;
+}
+
+#header .banner{
+	background: url(../images/for_ie/banner_bg.gif) 0 0 no-repeat;
+}
+#header .main-nav li strong a{
+	font-weight: normal;
+	color: #ED3503;
+}
+#header .main-nav  a{
+	padding: 0px 48px;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	color: #333;
+}
+#header .main-nav  a:hover{
+	color: #FF3300;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+#header .post{
+	text-align: center;
+}
+
+#header .post img{
+	position: absolute;
+	right: 40px;
+	top: 60px;
+}
+#header .post .intro{
+	position: absolute;
+	top: 100px;
+	left: 24px;
+	text-align: left;
+	font-size: 8px;
+
+}
+#header .post .intro h3, #header .post .intro p{
+	display: block;
+	font-family: monospace;
+	font-size: 10px;
+	line-height: 1.2;
+
+}
+#header .post .intro h3{
+	margin-bottom: 10px;
+}
+#header .post .intro p{
+	width: 138px;
+}
+
+
+#header .post ul li{
+	display: none;
+}
+
+#header .post2 .intro{
+	top: 246px;
+	left: 66px;	
+}
+#header .post2 .intro h3, #header .post2 .intro p{
+	float: left;
+	display: inline;
+}
+/*#header .post2 .intro p{
+	line-height: 1.2;
+}*/
+
+
+
+#main .content section h2{
+	font: 15px monospace;
+	font-weight: bold;
+	color: #2C2C2B;
+}
+#main .content section h2 a{
+	margin-left: 26px;
+}
+#main .content section h2 a:hover{
+		color: #8C8C88;
+		text-decoration: underline;
+}
+
+#footer .service{
+	margin-top: 30px;
+	padding: 26px 0 36px 0;
+	border: solid #A5A5A5;
+	border-width: 1px 0;
+}
+
+
+#footer ul{
+	min-width:220px;
+	padding: 22px 0 0 42px;
+	background: url(../images/fash-icons.gif) 0 -62px no-repeat;
+	border-left: 1px dashed #BFBFBF;
+}
+#footer li{
+	margin-bottom: 12px;
+}
+
+#footer li a{
+	font-size: 11px;
+	font-weight: bold;
+	color: #575656;
+}
+
+#footer li a:hover{
+	text-decoration: underline;
+	color: #D00404;
+}
+
+#footer li em{
+	color: #D00404;
+	font-style: normal;
+}
+#footer .wind-up{
+	min-width: 104px;
+}
+#footer .no-border{
+	min-width: 112px;
+	border-left: none;
+}
+#footer small{
+	display: block;
+	text-align: center;
+	font:100%/1.6 Myriad Pro;
+	color: #999999;
+}
+#footer .copyright{
+	margin-top: 22px;
+}
+
+

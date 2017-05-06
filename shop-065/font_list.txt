@@ -1,0 +1,3 @@
+[사용폰트]
+영문 : Myriad pro / Script MT Bold / Dinbol / Verdana / Dekar Light / Futura Hv BT
+한글 : 윤고딕 310, 340 / 돋움 / 나눔명조 

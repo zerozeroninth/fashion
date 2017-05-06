@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fashion</title>
+	<link rel="stylesheet" href="style/main.css">
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/for_ie.js"></script>
+		<link rel="stylesheet" href="style/for_ie.css">
+		<link rel="stylesheet" href="style/for_ie_sub.css">
+		<script type="text/javascript" src="js/html5shiv.js"></script>
+	<![endif]-->
+	<!--[if IE 6]>
+		<script src="js/DD_belatedPNG_0.0.8a.js"></script>
+		<script>
+			DD_belatedPNG.fix('img');
+		</script>
+	<![endif]-->
+</head>
+<body id="main">
+	<!-- begin header -->
+	<header id="header">
+
+		<p class="fl msg">加入收藏+</p>
+		<nav class="shopping-nav fr">
+			<ul>
+				<li>
+					<a href="javascript:;">登录</a>
+				</li>
+
+				<li>
+					<a href="javascript:;">加入</a>
+				</li>
+
+				<li>
+					<a href="javascript:;">购物车</a>
+				</li>
+
+				<li>
+					<a href="javascript:;">个人中心</a>
+				</li>
+					
+				<li>
+					<a href="javascript:;">我的订单</a>
+				</li>
+				
+			</ul>
+		</nav>
+		<h1>the Classic</h1>
+		<aside class="banner">
+			<div class="post1 post">
+						
+						<ul>
+							<li><a href="#"><img src="banner/banner1/1.png" alt="经典时装图片"></a></li>
+							<li><a href="#"><img src="banner/banner1/2.png" alt="经典时装图片"></a></li>
+							<li><a href="#"><img src="banner/banner1/3.png" alt="经典时装图片"></a></li>
+						</ul>
+						
+						
+						<div class="intro">
+							<h3>UNIQUE CITY</h3>
+							<p>CLASSIC STYLE
+							   EVERYWHERE, EVERY TIME
+							</p>
+						</div>
+						<div class="corner"></div>				
+			</div>
+			<div class="post2 post">
+				
+				<ul>
+					<li><a href="#"><img src="banner/banner2/1.png" alt="经典时装图片"></a></li>
+					<li><a href="#"><img src="banner/banner2/2.png" alt="经典时装图片"></a></li>
+					<li><a href="#"><img src="banner/banner2/3.png" alt="经典时装图片"></a></li>
+				</ul>
+				<div class="intro">
+					<h3>STRIPE LADY</h3>
+					<p>CLASSIC STYLE
+						EVERYWHERE, EVERY TIME
+					</p>
+				</div>
+				<div class="corner"></div>				
+			</div>
+			<div class="post3 post">
+				<ul>
+					<li><a href="#"><img src="banner/banner3/1.png" alt="经典时装图片"></a></li>
+					<li><a href="#"><img src="banner/banner3/2.png" alt="经典时装图片"></a></li>
+					<li><a href="#"><img src="banner/banner3/3.png" alt="经典时装图片"></a></li>
+				</ul>
+				<!-- <a href="#"><img src="banner/banner3/1.png" alt="经典时装图片"></a> -->
+				<div class="intro">
+					<h3>SPECIAL SPACE</h3>
+					<p>CLASSIC STYLE
+						EVERYWHERE, EVERY TIME
+					</p>
+				</div>
+				<div class="corner"></div>				
+			</div>
+			 <script>
+			 	
+			 	// 轮播广告
+				$(function () {
+					// $(".banner .post ul:eq(0) li:eq(0)").show('fast');
+					$(".banner .post1 li:eq(0)").show('fast');
+					$(".banner .post2 li:eq(0)").show('fast');
+					$(".banner .post3 li:eq(0)").show('fast');
+					var timer=setInterval(function () 
+							{
+								var	corners=$('.banner .corner').get();
+								var intros=$('.banner .intro').get();
+								var uls=$('.banner .post ul').get();
+								
+
+								$('.banner .post ul').each(function (i) {
+									// alert($('.banner .post li:eq(1)').is(':hidden'));
+									var random=parseInt(Math.random()*10)%3;
+									// alert(random);
+										var lis=uls[i].getElementsByTagName('li');
+									if ($(lis[random]).is(':hidden')) {
+										$(corners[i]).animate({width:'300px', height:'300px'},2300,'swing',function (){
+												$(intros[i]).fadeOut(('normal'));
+												$(lis).fadeOut('slow',function () {
+													$(intros[i]).fadeIn(('slow'));
+													$(lis[random]).fadeIn('slow',function () {
+														$(corners[i]).animate({width:'0', height:'0'},2300,'swing');
+													});
+												});	
+											})
+										}
+								})
+							}, 5000);
+				})
+			 </script>
+		</aside>
+
+		<nav class="main-nav">
+			<ul>
+				<li><a href="javascript:;">首页</a></li>
+				<li><a href="javascript:;">外套</a></li>
+				<li><a href="javascript:;">裙装</a></li>
+				<li><a href="javascript:;">裤子</a></li>
+				<li><a href="javascript:;">鞋包</a></li>
+				<li><a href="javascript:;">ETC</a></li>
+				<li><strong><a href="javascript:;">SALE</a></strong></li>
+				<li><strong><a href="javascript:;">ONLY U</a></strong></li>
+			</ul>
+		</nav>
+		
+
+		</script>
+	</header>
+	<!-- end header -->
+
+	<!-- begin article -->
+			<article id="container" class="content">
+			
+				<!-- begin layer1 -->
+				<div class="layer1 layer clear">
+					<section class="section1">
+						<h2>Best Seller<a href="javascript:;">&lt &gt</a></h2>
+						<ul>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/best-seller/1.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/best-seller/2.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/best-seller/3.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/best-seller/4.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/best-seller/5.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/best-seller/6.png" alt="热销时装图片"></a></div>
+							</li>
+						</ul>
+					</section>
+					<section class="section2">
+						<h2>New Item<a href="javascript:;">&lt &gt</a></h2>
+						
+						<ul>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/new-item/1.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/new-item/2.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/new-item/3.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/new-item/4.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/new-item/5.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/new-item/6.png" alt="热销时装图片"></a></div>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<!-- end layer1  -->
+
+
+				<!-- begin layer2 -->
+				<div class="layer2 layer clear">
+					<section class="section1">
+						<h2>Hot Issue<a href="javascript:;">&lt &gt</a></h2>
+						
+						<ul>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/hot-issure/1.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/hot-issure/2.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/hot-issure/3.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/hot-issure/4.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/hot-issure/5.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/hot-issure/6.png" alt="热销时装图片"></a></div>
+							</li>
+						</ul>
+					</section>
+					<section class="section2">
+						<h2>MD's choice<a href="javascript:;">&lt &gt</a></h2>
+						
+						<ul>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/MD’s-choice/1.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/MD’s-choice/2.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/MD’s-choice/3.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/MD’s-choice/4.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/MD’s-choice/5.png" alt="热销时装图片"></a></div>
+							</li>
+							<li>
+								<div class="cabinet com"><a href="javascript:;"><img src="images/MD’s-choice/6.png" alt="热销时装图片"></a></div>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<!-- end layer2 -->
+				
+			</article>
+			<!-- end article -->
+
+
+			<!-- begin footer -->
+			<footer id="footer">
+				
+				<div class="service clear">
+					<ul class="no-border">
+						<li><a href="#">NOTICE</a></li>
+						<li><a href="#">Q&ampA</a></li>
+						<li><a href="#">EVENT</a></li>
+						<li><a href="#">COMMUNITY</a></li>
+					</ul>
+					<ul class="no-border">
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">MEMBERS</a></li>
+						<li><a href="#">CART</a></li>
+						<li><a href="#">ORDER</a></li>
+					</ul>
+					<ul>
+						<li><a href="javascript:;"><em>02-478-4582</em></a></li>
+						<li><a href="javascript:;">mon-fri<span>10am ~ 18pm</span></a></li>
+						<li><a href="javascript:;">lunchtime<span>12pm ~ 13pm</span></a></li>
+						<li><a href="javascript:;">sat-sun<span>off day</span></a></li>
+					</ul>
+					<ul>
+						<li><a href="javascript:;">kb 03546-12-54789123</a></li>
+						<li><a href="javascript:;">nh 0123-547851-12-001</a></li>
+						<li><a href="javascript:;">style town</a></li>
+					</ul>
+					<ul class="wind-up">
+						<li><a href="javascript:;">COMPANY</a></li>
+						<li><a href="javascript:;">USELAW</a></li>
+						<li><a href="javascript:;">PRIVERCY</a></li>
+						<li><a href="javascript:;">PARNTERS</a></li>
+					</ul>
+				</div>
+				
+				
+				<small class="copyright">
+					Copyright © 2010-2015 <strong><a href="#">EASTNINE. INC</a></strong>版权所有, All Rights Reserved ; 
+				<small>
+				</small>
+					网络文化经营许可证京网文[2014]2148-348号 沪ICP备09051785号 联网出版许可证编号新出网证(京)字150号
+				</small>
+			</footer>
+			<!-- end footer -->	
+	
+	
+</body>
+</html>
